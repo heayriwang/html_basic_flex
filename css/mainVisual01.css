@@ -1,3 +1,7 @@
+* {
+    outline: 1px solid --tomato;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -7,15 +11,9 @@ body {
 }
 
 #header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
+    line-height: 100px;
     display: flex;
     padding: 0 50px;
-    justify-content: space-between;
-    line-height: 100px;
-    background: #fff;
 }
 
 #header h1 {
@@ -23,103 +21,62 @@ body {
     font-size: 0;
 }
 
-#header .gnb>ul {
-    display: flex;
-    justify-content: center;
-    width: 1200px;
-
-}
-
 #header .link {
     flex: 1;
-    text-align: center;
+    text-align: right;
 }
 
-
-#header .gnb>ul>li>a {
-    padding: 0 20px;
-}
-
-
-#header .gnb>ul>li a {
-    display: block;
-    text-align: center;
-}
-
-#header .gnb>ul>li .menu_wrap {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    right: 0;
-    line-height: 25px;
-    display: none;
-    background: #fff;
-    border: 1px solid #ddd;
-}
-
-#header .gnb>ul>li:hover .menu_wrap {
-    display: block;
-
-}
-
-
-
-#header .mega {
+#header .gnb>ul {
+    display: flex;
     width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    padding: 30px 100px;
-    gap: 50px;
-}
-
-#header .mega img {
-    width: 250px;
-}
-
-
-
-
-#header .mega .right_menu {
-    display: flex;
     gap: 30px;
 }
 
-
-
-
-
-
-
-
-
-
+#header .gnb>ul>a {
+    display: block;
+}
 
 .mainVisual {
     position: relative;
-    height: 500px;
+    height: 600px;
     background: url(../img/main_visual01.jpg) no-repeat center center/cover;
+
 }
 
 .mainVisual .slogan {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    width: 1200px;
+
 }
 
 .mainVisual .slogan h2 {
-    color: #fff;
     font-size: 40px;
-    font-weight: bold;
-    margin: 0 0 20px 0;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 10px 0;
 }
 
 .mainVisual .slogan p {
-    color: #fff;
     font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+    margin: 0 0 5px 0;
 }
+
+.mainVisual .icon {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin: 0 0 0 -600px;
+    color: #fff;
+    font-size: 100px;
+}
+
+
 
 .mainContent {
     padding: 100px 0;
