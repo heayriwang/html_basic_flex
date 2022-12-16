@@ -1,0 +1,177 @@
+* {
+    outline: 1px solid --tomato;
+}
+
+.mc {
+    color: tomato;
+}
+
+
+
+#header {
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    font-size: 0;
+}
+
+
+#header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header .gnb>ul a {
+    display: block;
+}
+
+
+
+
+.mainContent {
+    padding: 100px 0 0 0;
+}
+
+.mainContent h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mainContent h2::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #333;
+    margin: 20px auto;
+}
+
+.mainContent>p {
+    font-size: 15px;
+    margin: 0 0 70px 0;
+    text-align: center;
+}
+
+.mainContent .top .inner {
+    display: flex;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.mainContent .top {
+    margin: 0 0 130px 0;
+}
+
+.mainContent .top .inner>div {
+    position: relative;
+    flex: 1;
+}
+
+.mainContent .itm .con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 260px;
+    background: rgba(3, 72, 190, 0.5);
+    border-radius: 50%;
+
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+
+}
+
+.mainContent .itm .con i {
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.mainContent .itm .con strong {
+    font-size: 20px;
+}
+
+.mainContent .itm:nth-child(odd) .con {
+    background: rgba(0, 0, 0, 0.1);
+    color: #222;
+    text-shadow: 0 0 1px #fff;
+}
+
+.mainContent .itm:nth-child(1) .con {
+    margin: 0 0 0 50px;
+}
+
+.mainContent .itm:nth-child(2) .con {
+    margin: 0 0 0 25px;
+}
+
+.mainContent .itm:nth-child(3) .con {
+    position: relative;
+    z-index: 999;
+    transform: scale(1.2);
+}
+
+.mainContent .itm:nth-child(4) .con {
+    margin: 0 0 0 -25px;
+}
+
+.mainContent .itm:nth-child(5) .con {
+    margin: 0 0 0 -50px;
+}
+
+.mainContent .bottom {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.mainContent .bottom .inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .bottom .inner>div {
+    flex: 1 0 40%;
+}
+
+.mainContent .bottom .inner .case {
+    display: flex;
+    gap: 30px;
+}
+
+.mainContent .bottom .inner .case .left {
+    font-size: 30px;
+}
+
+.mainContent .bottom .inner .case .right h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.mainContent .bottom .inner .case .right p {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+
+#footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
